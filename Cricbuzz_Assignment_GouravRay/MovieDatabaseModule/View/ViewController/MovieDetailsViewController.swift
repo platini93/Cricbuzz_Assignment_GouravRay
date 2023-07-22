@@ -52,7 +52,7 @@ class MovieDetailsViewController: UIViewController {
         ratingsDropdown.optionArray = optionArray
         ratingsDropdown.isSearchEnable = false
         ratingsDropdown.checkMarkEnabled = false
-        ratingsDropdown.selectedRowColor = UIColor.gray
+        ratingsDropdown.selectedRowColor = UIColor(hex: "e3e3e3") ?? .gray
         ratingsDropdown.arrowColor = .black
         ratingsDropdown.arrowSize = 15
         

@@ -228,6 +228,9 @@ extension MoviesSearchViewController:UISearchBarDelegate, UITextFieldDelegate {
         
         if searchText == "" {
             searching = false
+            for section in sections {
+                section.isOpened = false
+            }
             moviesTableView.reloadData()
             return
         }
