@@ -1,0 +1,6 @@
+framework module Pods_Cricbuzz_Assignment_GouravRay {
+  umbrella header "Pods-Cricbuzz_Assignment_GouravRay-umbrella.h"
+
+  export *
+  module * { export * }
+}
