@@ -57,6 +57,7 @@ class MoviesSearchViewController: UIViewController, MoviesViewProtocol {
     
     func updateUI() {
         sections = moviesViewModel?.sections ?? []
+        moviesTableView.reloadData()
     }
     
     //MARK: MoviesViewProtocol methods
