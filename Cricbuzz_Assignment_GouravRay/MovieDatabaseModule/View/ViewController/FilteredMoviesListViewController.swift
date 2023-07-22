@@ -18,7 +18,7 @@ class FilteredMoviesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Searched Movies"
+        self.title = "Results"
         movieTable.delegate = self
         movieTable.dataSource = self
         movieTable.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "MovieTableViewCell")
