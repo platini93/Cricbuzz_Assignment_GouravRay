@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692C01182A6B948E00900AEF /* SectionHeaderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692C01162A6B948E00900AEF /* SectionHeaderTableCell.swift */; };
+		692C01192A6B948E00900AEF /* SectionHeaderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692C01172A6B948E00900AEF /* SectionHeaderTableCell.xib */; };
 		69C38CCC2A6B720C003B3B17 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C38CCB2A6B720C003B3B17 /* MovieDetailsViewController.swift */; };
 		69DBF6892A6AC6D20092E2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBF6882A6AC6D20092E2BE /* AppDelegate.swift */; };
 		69DBF68B2A6AC6D20092E2BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBF68A2A6AC6D20092E2BE /* SceneDelegate.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		01A8F7AD634CBBD598542B6B /* Pods-Cricbuzz_Assignment_GouravRay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cricbuzz_Assignment_GouravRay.release.xcconfig"; path = "Target Support Files/Pods-Cricbuzz_Assignment_GouravRay/Pods-Cricbuzz_Assignment_GouravRay.release.xcconfig"; sourceTree = "<group>"; };
+		692C01162A6B948E00900AEF /* SectionHeaderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTableCell.swift; sourceTree = "<group>"; };
+		692C01172A6B948E00900AEF /* SectionHeaderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderTableCell.xib; sourceTree = "<group>"; };
 		69C38CCB2A6B720C003B3B17 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		69DBF6852A6AC6D20092E2BE /* Cricbuzz_Assignment_GouravRay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cricbuzz_Assignment_GouravRay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DBF6882A6AC6D20092E2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				69DBF6A22A6AC7EB0092E2BE /* ViewController */,
 				69DBF6AD2A6B12EC0092E2BE /* MovieTableViewCell.swift */,
 				69DBF6AE2A6B12EC0092E2BE /* MovieTableViewCell.xib */,
+				692C01162A6B948E00900AEF /* SectionHeaderTableCell.swift */,
+				692C01172A6B948E00900AEF /* SectionHeaderTableCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +224,7 @@
 				69DBF6952A6AC6D20092E2BE /* LaunchScreen.storyboard in Resources */,
 				69DBF6B02A6B12EC0092E2BE /* MovieTableViewCell.xib in Resources */,
 				69DBF6922A6AC6D20092E2BE /* Assets.xcassets in Resources */,
+				692C01192A6B948E00900AEF /* SectionHeaderTableCell.xib in Resources */,
 				69DBF6AA2A6ACA2F0092E2BE /* movies.json in Resources */,
 				69DBF6902A6AC6D20092E2BE /* Main.storyboard in Resources */,
 			);
@@ -279,6 +286,7 @@
 				69DBF6892A6AC6D20092E2BE /* AppDelegate.swift in Sources */,
 				69DBF6A42A6AC7EB0092E2BE /* MoviesViewModel.swift in Sources */,
 				69DBF6A82A6AC8C20092E2BE /* MoviesSearchViewController.swift in Sources */,
+				692C01182A6B948E00900AEF /* SectionHeaderTableCell.swift in Sources */,
 				69DBF6B22A6B1BFF0092E2BE /* FilteredMoviesListViewController.swift in Sources */,
 				69DBF68B2A6AC6D20092E2BE /* SceneDelegate.swift in Sources */,
 			);

@@ -25,7 +25,7 @@ class MoviesSearchViewController: UIViewController, MoviesViewProtocol {
         searchBar.delegate = self
         moviesTableView.delegate = self
         moviesTableView.dataSource = self
-        moviesTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        moviesTableView.register(UINib(nibName: "SectionHeaderTableCell", bundle: nil), forCellReuseIdentifier: "SectionHeaderTableCell")
         moviesTableView.register(UINib(nibName: "MovieTableViewCell", bundle: nil), forCellReuseIdentifier: "MovieTableViewCell")
                 
         if let searchTextField = self.searchBar.value(forKey: "searchField") as? UITextField , let clearButton = searchTextField.value(forKey: "_clearButton")as? UIButton {
@@ -103,9 +103,15 @@ extension MoviesSearchViewController: UITableViewDelegate, UITableViewDataSource
         if indexPath.section == 4 {
             
             if indexPath.row == 0 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-                cell.textLabel?.text = sections[indexPath.section].title
-                cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderTableCell", for: indexPath) as! SectionHeaderTableCell
+                cell.titleLabel.text = sections[indexPath.section].title
+                cell.titleLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+                cell.arrowImage.isHidden = false
+                if sections[indexPath.section].isOpened {
+                    cell.arrowImage.image = UIImage(named: "downArrow")
+                } else {
+                    cell.arrowImage.image = UIImage(named: "rightArrow")
+                }
                 return cell
             }
             
@@ -118,18 +124,25 @@ extension MoviesSearchViewController: UITableViewDelegate, UITableViewDataSource
             return cell
             
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "SectionHeaderTableCell", for: indexPath) as! SectionHeaderTableCell
             
             if indexPath.row == 0 {
-                cell.textLabel?.text = sections[indexPath.section].title
-                cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 20.0)
-            } else {
-                if indexPath.section == 0 {
-                    cell.textLabel?.text = "\(sections[indexPath.section].options[indexPath.row - 1])"
+                cell.titleLabel.text = sections[indexPath.section].title
+                cell.titleLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
+                if sections[indexPath.section].isOpened {
+                    cell.arrowImage.image = UIImage(named: "downArrow")
                 } else {
-                    cell.textLabel?.text = (sections[indexPath.section].options[indexPath.row - 1]) as? String
+                    cell.arrowImage.image = UIImage(named: "rightArrow")
                 }
-                cell.textLabel?.font = UIFont.systemFont(ofSize: 15.0)
+                cell.arrowImage.isHidden = false
+            } else {
+                cell.arrowImage.isHidden = true
+                if indexPath.section == 0 {
+                    cell.titleLabel.text = "\(sections[indexPath.section].options[indexPath.row - 1])"
+                } else {
+                    cell.titleLabel.text = (sections[indexPath.section].options[indexPath.row - 1]) as? String
+                }
+                cell.titleLabel.font = UIFont.systemFont(ofSize: 15.0)
             }
             return cell
         }
