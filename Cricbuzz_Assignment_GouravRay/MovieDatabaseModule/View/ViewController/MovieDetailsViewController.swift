@@ -26,6 +26,7 @@ class MovieDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "Movie Details"
         plotTextView.flashScrollIndicators()
         posterImage.sd_setImage(with: URL(string: movie.poster), placeholderImage: UIImage(named: "placeholder"))
@@ -33,7 +34,12 @@ class MovieDetailsViewController: UIViewController {
         releaseDateLbl.text = "Released: \(movie.released)"
         genreLbl.text = "Genre: \(movie.genre)"
         plotTextView.text = "Plot: \(movie.plot)"
-        castAndCrewLbl.text = "Cast: \(movie.actors) \nDirectors: \(movie.director) \nWriters: \(movie.writer)"
+        
+        if UIScreen.main.bounds.size.height <= 667.0 {
+            castAndCrewLbl.text = "Cast: \(movie.actors) \nDirectors: \(movie.director) \nWriters: \(movie.writer)"
+        } else {
+            castAndCrewLbl.text = "Cast: \(movie.actors) \n\nDirectors: \(movie.director) \n\nWriters: \(movie.writer)"
+        }
         
         var optionArray:[String] = []
         var ratingValues:[String] = []

@@ -130,13 +130,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratings :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-Kb-gnF">
-                                <rect key="frame" x="20" y="352" width="280" height="18"/>
+                                <rect key="frame" x="20" y="362" width="280" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pvx-nn-tMy" customClass="DropDown" customModule="Cricbuzz_Assignment_GouravRay" customModuleProvider="target">
-                                <rect key="frame" x="20" y="380" width="280" height="34"/>
+                                <rect key="frame" x="20" y="390" width="280" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -148,7 +148,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CiI-wr-NH0">
-                                <rect key="frame" x="20" y="424" width="280" height="15"/>
+                                <rect key="frame" x="20" y="434" width="280" height="15"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u06-3m-Mt1">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="15"/>
@@ -167,7 +167,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxd-Ew-jhz">
-                                <rect key="frame" x="20" y="444" width="280" height="17"/>
+                                <rect key="frame" x="20" y="454" width="280" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -192,7 +192,7 @@
                             <constraint firstItem="CiI-wr-NH0" firstAttribute="trailing" secondItem="Pvx-nn-tMy" secondAttribute="trailing" id="XgG-Eg-q2P"/>
                             <constraint firstItem="vxd-Ew-jhz" firstAttribute="leading" secondItem="CiI-wr-NH0" secondAttribute="leading" id="agD-uK-Lum"/>
                             <constraint firstItem="cKv-9H-qLi" firstAttribute="trailing" secondItem="4oA-J6-v6M" secondAttribute="trailing" id="dPN-e6-6zr"/>
-                            <constraint firstItem="c9g-Kb-gnF" firstAttribute="top" secondItem="cKv-9H-qLi" secondAttribute="bottom" constant="10" id="ga8-he-o0O"/>
+                            <constraint firstItem="c9g-Kb-gnF" firstAttribute="top" secondItem="cKv-9H-qLi" secondAttribute="bottom" constant="20" id="ga8-he-o0O"/>
                             <constraint firstItem="cKv-9H-qLi" firstAttribute="top" secondItem="4oA-J6-v6M" secondAttribute="bottom" constant="10" id="hIY-vR-uxC"/>
                             <constraint firstItem="nBp-0W-uuG" firstAttribute="trailing" secondItem="4oA-J6-v6M" secondAttribute="trailing" constant="20" id="hXZ-4o-9hg"/>
                             <constraint firstItem="UBx-X8-jQU" firstAttribute="top" secondItem="ory-8K-fyo" secondAttribute="top" id="lhV-ly-WCB"/>
