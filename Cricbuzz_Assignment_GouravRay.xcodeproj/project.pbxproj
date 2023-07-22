@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		692C01182A6B948E00900AEF /* SectionHeaderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692C01162A6B948E00900AEF /* SectionHeaderTableCell.swift */; };
 		692C01192A6B948E00900AEF /* SectionHeaderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 692C01172A6B948E00900AEF /* SectionHeaderTableCell.xib */; };
+		692C011B2A6BAD3F00900AEF /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692C011A2A6BAD3F00900AEF /* iOSDropDown.swift */; };
 		69C38CCC2A6B720C003B3B17 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C38CCB2A6B720C003B3B17 /* MovieDetailsViewController.swift */; };
 		69DBF6892A6AC6D20092E2BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBF6882A6AC6D20092E2BE /* AppDelegate.swift */; };
 		69DBF68B2A6AC6D20092E2BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DBF68A2A6AC6D20092E2BE /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 		01A8F7AD634CBBD598542B6B /* Pods-Cricbuzz_Assignment_GouravRay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cricbuzz_Assignment_GouravRay.release.xcconfig"; path = "Target Support Files/Pods-Cricbuzz_Assignment_GouravRay/Pods-Cricbuzz_Assignment_GouravRay.release.xcconfig"; sourceTree = "<group>"; };
 		692C01162A6B948E00900AEF /* SectionHeaderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderTableCell.swift; sourceTree = "<group>"; };
 		692C01172A6B948E00900AEF /* SectionHeaderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeaderTableCell.xib; sourceTree = "<group>"; };
+		692C011A2A6BAD3F00900AEF /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
 		69C38CCB2A6B720C003B3B17 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		69DBF6852A6AC6D20092E2BE /* Cricbuzz_Assignment_GouravRay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cricbuzz_Assignment_GouravRay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69DBF6882A6AC6D20092E2BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		69DBF6872A6AC6D20092E2BE /* Cricbuzz_Assignment_GouravRay */ = {
 			isa = PBXGroup;
 			children = (
+				692C011A2A6BAD3F00900AEF /* iOSDropDown.swift */,
 				69DBF6A92A6ACA2F0092E2BE /* movies.json */,
 				69DBF69C2A6AC7EB0092E2BE /* MovieDatabaseModule */,
 				69DBF6882A6AC6D20092E2BE /* AppDelegate.swift */,
@@ -281,6 +284,7 @@
 			files = (
 				69DBF6A52A6AC7EB0092E2BE /* MoviesModel.swift in Sources */,
 				69DBF6AC2A6AFCA00092E2BE /* Extensions.swift in Sources */,
+				692C011B2A6BAD3F00900AEF /* iOSDropDown.swift in Sources */,
 				69C38CCC2A6B720C003B3B17 /* MovieDetailsViewController.swift in Sources */,
 				69DBF6AF2A6B12EC0092E2BE /* MovieTableViewCell.swift in Sources */,
 				69DBF6892A6AC6D20092E2BE /* AppDelegate.swift in Sources */,
