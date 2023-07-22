@@ -38,6 +38,14 @@ class MoviesSearchViewController: UIViewController, MoviesViewProtocol {
             self.updateUI()
         }
         moviesViewModel?.getMoviesData()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tapGesture.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard() {
+        self.view.endEditing(true)
     }
     
     @objc func clearSearch() {
